@@ -31,7 +31,7 @@ class RandomizeViewModel : ViewModel() {
         mutableLiveData.value = DEFAULT_VALUE
     }
 
-    fun incrementNumber(){
+    fun incrementNumber() {
         numberIncrementer(mutableLiveData)
     }
 }
