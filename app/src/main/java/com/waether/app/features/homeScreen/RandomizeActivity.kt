@@ -13,6 +13,8 @@ class RandomizeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_randomize)
         val viewModel = ViewModelProviders.of(this).get(RandomizeViewModel::class.java)
-        viewModel.mutableLiveData.observe(this, Observer{ tv_random_number.text = it.toString()})
+        viewModel.mutableLiveData.observe(this, Observer { tv_random_number.text = it.toString() })
+
+        btn_increment.setOnClickListener { viewModel.incrementNumber() }
     }
 }

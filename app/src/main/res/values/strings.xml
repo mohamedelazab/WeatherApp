@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WeatherApp</string>
+    <string name="incremental_button">Incremental Button</string>
 </resources>
