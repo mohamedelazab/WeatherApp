@@ -20,3 +20,8 @@ class CoordinatesTypeConverter {
     fun fromJson(string: String) = Gson().fromJson(string, Coordinates::class.java)
 
 }
+
+fun toggleChanger(liveData: MutableLiveData<Boolean>) {
+    val oldState = liveData.value ?: false
+    liveData.postValue(!oldState)
+}
